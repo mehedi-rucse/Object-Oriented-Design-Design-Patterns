@@ -14,7 +14,7 @@ public class BankChain {
         boolean isAuthorized;
         AbstractAuthorizer authorizationChain = getChainOfAuthorization();
         Account account = new Account("Mehedi Hasan", 10000000);
-        Integer amount = 1000000;
+        Integer amount = 10000;
         isAuthorized = authorizationChain.authorize(account,amount);
         if(isAuthorized) {
             account.withdraw(amount);
